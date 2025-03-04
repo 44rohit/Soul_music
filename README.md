@@ -1,2 +1,164 @@
-# Soul_music
-Soul Music is a modern and immersive music streaming platform designed for effortless navigation and a sleek dark-themed interface. It features a dynamic sidebar for quick access, personalized playlists, trending artist showcases, and high-quality streaming. Users can explore popular albums and singles, create custom playlists, and enjoy seamless playback. The intuitive search bar ensures instant access to favorite tracks. With a responsive design, smooth animations, and privacy-focused settings, Soul Music offers an unparalleled listening experience. Whether discovering new hits or enjoying timeless classics, this platform is built for every music lover. Enjoy music, your way!
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soul Music</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ionicons/7.1.0/ionicons.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background: #121212;
+            color: white;
+        }
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            background: #000;
+        }
+        .navbar-left {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .navbar-left ion-icon {
+            font-size: 30px;
+            color: #1DB954;
+        }
+        .search-bar {
+            display: flex;
+            align-items: center;
+            background: #181818;
+            padding: 5px 10px;
+            border-radius: 20px;
+        }
+        .search-bar input {
+            background: transparent;
+            border: none;
+            outline: none;
+            color: lightgrey;
+            padding: 5px;
+        }
+        .search-bar ion-icon {
+            margin-right: 5px;
+        }
+        .navbar-right {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .navbar-right a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .login-btn {
+            background: white;
+            color: black;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+        .sidebar {
+            width: 250px;
+            background: #000;
+            padding: 20px;
+            position: fixed;
+            height: 100%;
+            overflow-y: auto;
+        }
+        .sidebar h2 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .sidebar ul {
+            list-style: none;
+        }
+        .sidebar ul li {
+            padding: 10px 0;
+        }
+        .sidebar ul li a {
+            color: white;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .sidebar button {
+            background: #121212;
+            color: white;
+            padding: 10px;
+            border: 1px solid white;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-left">
+            <ion-icon name="radio"></ion-icon>
+            <a href="Soul.html"><ion-icon name="home"></ion-icon></a>
+            <div class="search-bar">
+                <ion-icon name="search"></ion-icon>
+                <input type="text" placeholder="What do you want to play?">
+                <ion-icon name="albums-outline"></ion-icon>
+            </div>
+        </div>
+        <div class="navbar-right">
+            <a href="#">Premium</a>
+            <a href="#">Support</a>
+            <a href="#">Download</a>
+            <a href="#"><ion-icon name="arrow-down-circle-outline"></ion-icon> Install App</a>
+            <a href="#">Sign up</a>
+            <a href="#" class="login-btn"><h4 style="color: black;">Log in</h4></a>
+        </div>
+    </div>
+    <div class="sidebar">
+        <h2>Your Library</h2>
+        <ul>
+            <li><a href="#"><ion-icon name="add"></ion-icon> Create your first playlist</a></li>
+            <li><a href="#">It's easy, we'll help you</a></li>
+            <li><button><ion-icon name="add"></ion-icon> Create playlist</button></li>
+        </ul>
+        <ul>
+            <li><a href="#">Legal</a></li>
+            <li><a href="#">Safety & Privacy Center</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Cookies</a></li>
+            <li><a href="#">About Ads</a></li>
+            <li><a href="#">Accessibility</a></li>
+        </ul>
+        <button><ion-icon name="globe-outline"></ion-icon> English</button>
+    </div>
+    <div class="main-content" style="margin-left: 270px;">
+        <h1>Trending Songs</h1>
+        <div class="playlist">
+            <div class="song-card">
+                <img src="Door-Aa-Gaye.jpg" alt="Song">
+                <p> Door Aa Gaye</p>
+            </div>
+            <div class="song-card">
+                <img src="Dhanda Nyoliwala.jpeg" alt="Song">
+                <p> Dhanda Nyoliwala</p>
+            </div>
+            <div class="song-card">
+                <img src="Khuda Jaane.jpg" alt="Song">
+                <p> Khuda Jaane </p>
+            </div>
+        </div>
+    </div>
+    <div class="player">
+        <p>Now Playing: Ravan Rap</p>
+    </div>
+</body>
+</html>
